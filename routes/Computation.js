@@ -9,9 +9,8 @@ router.get("/", function (req, res, next) {
     x = req.query.x;
   }
   let y = Math.log(x);
-  res.render("Computation", {
-    result: `Math.log() applied to [${x}] is [${y}]`
-  });
-});
+  res.send(`Math.log() applied to [${x}] is [${y}`
+  );
+//});
 
 module.exports = router;
